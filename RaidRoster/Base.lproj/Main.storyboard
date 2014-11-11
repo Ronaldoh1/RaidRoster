@@ -32,6 +32,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="NJd-tx-Ash"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="BY4-LO-Iln"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -43,8 +47,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Adventurers" id="hCW-Uv-jyy">
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="pCV-RG-1bX"/>
+                        <barButtonItem key="leftBarButtonItem" title="Done" id="0N0-Wi-RpA">
+                            <connections>
+                                <action selector="onDoneButtonTapped:" destination="vXZ-lx-hvc" id="25F-Ch-Ag1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="pCV-RG-1bX">
+                            <connections>
+                                <action selector="onAddButtonTapped:" destination="vXZ-lx-hvc" id="yah-1E-8bL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="09c-6C-YKv" id="jyK-Gm-sR4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +97,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z17-Wm-ED5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="839"/>
+            <point key="canvasLocation" x="1718" y="829"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wLS-sL-UE2">

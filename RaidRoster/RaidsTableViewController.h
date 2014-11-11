@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Adventurer;
 @interface RaidsTableViewController : UITableViewController
+
+@property Adventurer *adventurer;
 
 @end

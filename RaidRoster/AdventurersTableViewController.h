@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Raid;
 @interface AdventurersTableViewController : UIViewController
 
-
-@property id raid;
+@property Raid *raid;
 
 @end
 
