@@ -27,6 +27,9 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BQH-d7-0lf" id="JVH-j8-ZcB">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="sfN-PE-m9B" kind="show" id="Ff1-uN-dag"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -40,11 +43,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Adventurers" id="hCW-Uv-jyy">
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="pCV-RG-1bX">
-                            <connections>
-                                <segue destination="sfN-PE-m9B" kind="show" id="r8V-UL-DVa"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="pCV-RG-1bX"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -60,7 +59,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="raidCell" rowHeight="60" id="OZ9-ch-6sJ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="raidCell" rowHeight="60" id="OZ9-ch-6sJ">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OZ9-ch-6sJ" id="0pW-Xv-9kr">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -82,7 +81,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z17-Wm-ED5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1648" y="839"/>
+            <point key="canvasLocation" x="1858" y="839"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wLS-sL-UE2">

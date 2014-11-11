@@ -11,6 +11,7 @@
 @interface AdventurersTableViewController : UIViewController
 
 
+@property id raid;
 
 @end
 
