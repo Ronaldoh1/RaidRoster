@@ -10,11 +10,12 @@
 		23EADD611A12C22B0053E507 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EADD601A12C22B0053E507 /* main.m */; };
 		23EADD641A12C22B0053E507 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EADD631A12C22B0053E507 /* AppDelegate.m */; };
 		23EADD671A12C22B0053E507 /* RaidRoster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23EADD651A12C22B0053E507 /* RaidRoster.xcdatamodeld */; };
-		23EADD6A1A12C22B0053E507 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EADD691A12C22B0053E507 /* ViewController.m */; };
+		23EADD6A1A12C22B0053E507 /* AdventurersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EADD691A12C22B0053E507 /* AdventurersTableViewController.m */; };
 		23EADD6D1A12C22B0053E507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EADD6B1A12C22B0053E507 /* Main.storyboard */; };
 		23EADD6F1A12C22B0053E507 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EADD6E1A12C22B0053E507 /* Images.xcassets */; };
 		23EADD721A12C22B0053E507 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23EADD701A12C22B0053E507 /* LaunchScreen.xib */; };
 		23EADD7E1A12C22B0053E507 /* RaidRosterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EADD7D1A12C22B0053E507 /* RaidRosterTests.m */; };
+		23EADD891A12C3960053E507 /* RaidsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EADD881A12C3960053E507 /* RaidsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +35,16 @@
 		23EADD621A12C22B0053E507 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		23EADD631A12C22B0053E507 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		23EADD661A12C22B0053E507 /* RaidRoster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RaidRoster.xcdatamodel; sourceTree = "<group>"; };
-		23EADD681A12C22B0053E507 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		23EADD691A12C22B0053E507 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		23EADD681A12C22B0053E507 /* AdventurersTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventurersTableViewController.h; sourceTree = "<group>"; };
+		23EADD691A12C22B0053E507 /* AdventurersTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdventurersTableViewController.m; sourceTree = "<group>"; };
 		23EADD6C1A12C22B0053E507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23EADD6E1A12C22B0053E507 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		23EADD711A12C22B0053E507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		23EADD771A12C22B0053E507 /* RaidRosterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaidRosterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23EADD7C1A12C22B0053E507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23EADD7D1A12C22B0053E507 /* RaidRosterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaidRosterTests.m; sourceTree = "<group>"; };
+		23EADD871A12C3960053E507 /* RaidsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaidsTableViewController.h; sourceTree = "<group>"; };
+		23EADD881A12C3960053E507 /* RaidsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaidsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +88,11 @@
 			children = (
 				23EADD621A12C22B0053E507 /* AppDelegate.h */,
 				23EADD631A12C22B0053E507 /* AppDelegate.m */,
-				23EADD681A12C22B0053E507 /* ViewController.h */,
-				23EADD691A12C22B0053E507 /* ViewController.m */,
+				23EADD681A12C22B0053E507 /* AdventurersTableViewController.h */,
+				23EADD691A12C22B0053E507 /* AdventurersTableViewController.m */,
 				23EADD6B1A12C22B0053E507 /* Main.storyboard */,
+				23EADD871A12C3960053E507 /* RaidsTableViewController.h */,
+				23EADD881A12C3960053E507 /* RaidsTableViewController.m */,
 				23EADD6E1A12C22B0053E507 /* Images.xcassets */,
 				23EADD701A12C22B0053E507 /* LaunchScreen.xib */,
 				23EADD651A12C22B0053E507 /* RaidRoster.xcdatamodeld */,
@@ -224,8 +229,9 @@
 			files = (
 				23EADD641A12C22B0053E507 /* AppDelegate.m in Sources */,
 				23EADD671A12C22B0053E507 /* RaidRoster.xcdatamodeld in Sources */,
-				23EADD6A1A12C22B0053E507 /* ViewController.m in Sources */,
+				23EADD6A1A12C22B0053E507 /* AdventurersTableViewController.m in Sources */,
 				23EADD611A12C22B0053E507 /* main.m in Sources */,
+				23EADD891A12C3960053E507 /* RaidsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
