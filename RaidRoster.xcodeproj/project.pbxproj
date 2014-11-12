@@ -16,8 +16,6 @@
 		23EADD721A12C22B0053E507 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23EADD701A12C22B0053E507 /* LaunchScreen.xib */; };
 		23EADD7E1A12C22B0053E507 /* RaidRosterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EADD7D1A12C22B0053E507 /* RaidRosterTests.m */; };
 		23EADD891A12C3960053E507 /* RaidsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EADD881A12C3960053E507 /* RaidsTableViewController.m */; };
-		23EADD8C1A12C8C10053E507 /* Adventurer.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EADD8B1A12C8C10053E507 /* Adventurer.m */; };
-		23EADD8F1A12C8C20053E507 /* Raid.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EADD8E1A12C8C20053E507 /* Raid.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +45,6 @@
 		23EADD7D1A12C22B0053E507 /* RaidRosterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaidRosterTests.m; sourceTree = "<group>"; };
 		23EADD871A12C3960053E507 /* RaidsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaidsTableViewController.h; sourceTree = "<group>"; };
 		23EADD881A12C3960053E507 /* RaidsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaidsTableViewController.m; sourceTree = "<group>"; };
-		23EADD8A1A12C8C10053E507 /* Adventurer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adventurer.h; sourceTree = "<group>"; };
-		23EADD8B1A12C8C10053E507 /* Adventurer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adventurer.m; sourceTree = "<group>"; };
-		23EADD8D1A12C8C20053E507 /* Raid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Raid.h; sourceTree = "<group>"; };
-		23EADD8E1A12C8C20053E507 /* Raid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Raid.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,10 +131,6 @@
 		23EADD901A12C8C80053E507 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				23EADD8D1A12C8C20053E507 /* Raid.h */,
-				23EADD8E1A12C8C20053E507 /* Raid.m */,
-				23EADD8A1A12C8C10053E507 /* Adventurer.h */,
-				23EADD8B1A12C8C10053E507 /* Adventurer.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -246,12 +236,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				23EADD641A12C22B0053E507 /* AppDelegate.m in Sources */,
-				23EADD8F1A12C8C20053E507 /* Raid.m in Sources */,
 				23EADD671A12C22B0053E507 /* RaidRoster.xcdatamodeld in Sources */,
 				23EADD6A1A12C22B0053E507 /* AdventurersTableViewController.m in Sources */,
 				23EADD611A12C22B0053E507 /* main.m in Sources */,
 				23EADD891A12C3960053E507 /* RaidsTableViewController.m in Sources */,
-				23EADD8C1A12C8C10053E507 /* Adventurer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

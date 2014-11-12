@@ -1,15 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A388a" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Adventurer" representedClassName="Adventurer" syncable="YES">
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="raids" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Raid" inverseName="adventurers" inverseEntity="Raid" syncable="YES"/>
-    </entity>
-    <entity name="Raid" representedClassName="Raid" syncable="YES">
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="adventurers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Adventurer" inverseName="raids" inverseEntity="Adventurer" syncable="YES"/>
-    </entity>
-    <elements>
-        <element name="Adventurer" positionX="-54" positionY="-9" width="128" height="73"/>
-        <element name="Raid" positionX="-36" positionY="9" width="128" height="73"/>
-    </elements>
+    <elements/>
 </model>
