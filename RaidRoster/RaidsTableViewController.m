@@ -5,13 +5,12 @@
 //  Created by Dave Krawczyk on 11/11/14.
 //  Copyright (c) 2014 MobileMakers. All rights reserved.
 //
+
+
 #import "AppDelegate.h"
-
-//#import "Raid.h"
-//#import "Adventurer.h"
-
 #import "AdventurersTableViewController.h"
 #import "RaidsTableViewController.h"
+
 @interface RaidsTableViewController()
 
 @property NSArray *raidsArray;
@@ -33,13 +32,6 @@
 
 - (void)loadRaids
 {
-                                       //TODO: step
-//    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-//    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Raid" inManagedObjectContext:self.moc];
-//    [fetchRequest setEntity:entity];
-//    self.raidsArray = [self.moc executeFetchRequest:fetchRequest error:nil];
-//
-//    [self.tableView reloadData];
 }
 
 - (IBAction)onAddButtonPressed:(UIBarButtonItem *)sender
@@ -55,13 +47,6 @@
                                style:UIAlertActionStyleDefault
                                handler:^(UIAlertAction *action)
                                {
-                                                                      //TODO: step
-//                                   UITextField *nameTextField = alertcontroller.textFields.firstObject;
-//
-//                                   Raid *raid = [NSEntityDescription insertNewObjectForEntityForName:@"Raid" inManagedObjectContext:self.moc];
-////                                   raid.name = nameTextField.text;
-//                                   [self.moc save:nil];
-//                                   [self loadRaids];
 
 
                                }];
@@ -76,12 +61,6 @@
 
 - (void)showAdventurersViewControllerForRaid:(Raid *)raid
 {
-                                   //TODO: step
-//    AdventurersTableViewController *adventuresVC = [self.storyboard instantiateViewControllerWithIdentifier:@"AdventurersTableViewController"];
-//    adventuresVC.raid = raid;
-//
-//    UINavigationController *navC  = [[UINavigationController alloc]initWithRootViewController:adventuresVC];
-//    [self presentViewController:navC animated:YES completion:nil];
 }
 
 #pragma mark - Tableview Methods
@@ -96,17 +75,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"raidCell"];
     Raid *raid = self.raidsArray[indexPath.row];
 
-                                       //TODO: step
-//    cell.textLabel.text = raid.name;
-
-//    if ([self.adventurer.raids containsObject:raid])
-//    {
-//        cell.backgroundColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:0.5];
-//    }
-//    else
-//    {
-//        cell.backgroundColor = [UIColor whiteColor];
-//    }
 
 
     return cell;
@@ -122,15 +90,6 @@
 {
     Raid *raid = self.raidsArray[indexPath.row];
 
-                                       //TODO: step
-//    if ([self.adventurer.raids containsObject:raid])
-//    {
-//        [self.adventurer removeRaidsObject:raid];
-//    }
-//    else
-//    {
-//        [self.adventurer addRaidsObject:raid];
-//    }
 
     [self.moc save:nil];
     [self.tableView reloadData];
