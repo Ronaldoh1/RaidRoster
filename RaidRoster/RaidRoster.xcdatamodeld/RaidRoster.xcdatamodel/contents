@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A388a" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Adventurer" representedClassName="Adventurer" syncable="YES">
+        <relationship name="raids" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Raids" inverseName="adventurers" inverseEntity="Raids" syncable="YES"/>
+    </entity>
+    <entity name="Raids" representedClassName="Raids" syncable="YES">
+        <relationship name="adventurers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Adventurer" inverseName="raids" inverseEntity="Adventurer" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Adventurer" positionX="-54" positionY="-9" width="128" height="58"/>
+        <element name="Raids" positionX="-27" positionY="27" width="128" height="58"/>
+    </elements>
 </model>
