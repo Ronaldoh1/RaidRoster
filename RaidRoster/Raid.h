@@ -8,15 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "Adventurer.h"
 
 @class Adventurer;
 
-@interface Raids : NSManagedObject
+@interface Raid : NSManagedObject
 
 @property (nonatomic, retain) NSSet *adventurers;
+@property NSString* name;
 @end
 
-@interface Raids (CoreDataGeneratedAccessors)
+@interface Raid (CoreDataGeneratedAccessors)
 
 - (void)addAdventurersObject:(Adventurer *)value;
 - (void)removeAdventurersObject:(Adventurer *)value;

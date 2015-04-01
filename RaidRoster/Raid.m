@@ -6,12 +6,13 @@
 //  Copyright (c) 2015 MobileMakers. All rights reserved.
 //
 
-#import "Raids.h"
+#import "Raid.h"
 #import "Adventurer.h"
 
 
-@implementation Raids
+@implementation Raid
 
 @dynamic adventurers;
+@dynamic name;
 
 @end

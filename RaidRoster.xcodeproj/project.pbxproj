@@ -17,7 +17,7 @@
 		23EADD7E1A12C22B0053E507 /* RaidRosterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EADD7D1A12C22B0053E507 /* RaidRosterTests.m */; };
 		23EADD891A12C3960053E507 /* RaidsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EADD881A12C3960053E507 /* RaidsTableViewController.m */; };
 		F23AE4141ACC67D6005E433B /* Adventurer.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AE4131ACC67D6005E433B /* Adventurer.m */; };
-		F23AE4171ACC67D6005E433B /* Raids.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AE4161ACC67D6005E433B /* Raids.m */; };
+		F23AE4171ACC67D6005E433B /* Raid.m in Sources */ = {isa = PBXBuildFile; fileRef = F23AE4161ACC67D6005E433B /* Raid.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		23EADD881A12C3960053E507 /* RaidsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaidsTableViewController.m; sourceTree = "<group>"; };
 		F23AE4121ACC67D6005E433B /* Adventurer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adventurer.h; sourceTree = "<group>"; };
 		F23AE4131ACC67D6005E433B /* Adventurer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adventurer.m; sourceTree = "<group>"; };
-		F23AE4151ACC67D6005E433B /* Raids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Raids.h; sourceTree = "<group>"; };
-		F23AE4161ACC67D6005E433B /* Raids.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Raids.m; sourceTree = "<group>"; };
+		F23AE4151ACC67D6005E433B /* Raid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Raid.h; sourceTree = "<group>"; };
+		F23AE4161ACC67D6005E433B /* Raid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Raid.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,8 @@
 				23EADD6E1A12C22B0053E507 /* Images.xcassets */,
 				23EADD701A12C22B0053E507 /* LaunchScreen.xib */,
 				23EADD651A12C22B0053E507 /* RaidRoster.xcdatamodeld */,
-				F23AE4151ACC67D6005E433B /* Raids.h */,
-				F23AE4161ACC67D6005E433B /* Raids.m */,
+				F23AE4151ACC67D6005E433B /* Raid.h */,
+				F23AE4161ACC67D6005E433B /* Raid.m */,
 				F23AE4121ACC67D6005E433B /* Adventurer.h */,
 				F23AE4131ACC67D6005E433B /* Adventurer.m */,
 				23EADD901A12C8C80053E507 /* Model */,
@@ -248,7 +248,7 @@
 				23EADD641A12C22B0053E507 /* AppDelegate.m in Sources */,
 				23EADD671A12C22B0053E507 /* RaidRoster.xcdatamodeld in Sources */,
 				23EADD6A1A12C22B0053E507 /* AdventurersTableViewController.m in Sources */,
-				F23AE4171ACC67D6005E433B /* Raids.m in Sources */,
+				F23AE4171ACC67D6005E433B /* Raid.m in Sources */,
 				23EADD611A12C22B0053E507 /* main.m in Sources */,
 				23EADD891A12C3960053E507 /* RaidsTableViewController.m in Sources */,
 				F23AE4141ACC67D6005E433B /* Adventurer.m in Sources */,

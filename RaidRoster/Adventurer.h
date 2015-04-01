@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "Raid.h"
 
 
 @interface Adventurer : NSManagedObject
 
 @property (nonatomic, retain) NSSet *raids;
+@property NSString* name;
 @end
 
 @interface Adventurer (CoreDataGeneratedAccessors)

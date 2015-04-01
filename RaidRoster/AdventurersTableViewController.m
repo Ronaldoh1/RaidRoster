@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "AdventurersTableViewController.h"
 #import "RaidsTableViewController.h"
+#import "Adventurer.h"
 
 @interface AdventurersTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -28,7 +29,15 @@
     [super viewDidLoad];
 
     self.moc = [AppDelegate appDelegate].managedObjectContext;
-    [self loadAdventurers];
+
+    if(self.raid) {
+        self.adventurers = [self.raid.adventurers allObjects];
+    }else{
+        [self loadAdventurers];
+    }
+
+
+
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -46,14 +55,16 @@
 
 - (void)loadAdventurers
 {
-
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Adventurer"];
+    self.adventurers = [self.moc executeFetchRequest:request error:nil];
+    [self.tableView reloadData];
 }
 
 - (IBAction)onAddButtonTapped:(id)sender {
     UIAlertController *alertcontroller = [UIAlertController alertControllerWithTitle:@"Add an adventurer" message:nil preferredStyle:UIAlertControllerStyleAlert];
 
     [alertcontroller addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-        nil;
+        textField.placeholder = @"Enter Adventurer's Name Here";
     }];
 
     UIAlertAction *okAction = [UIAlertAction
@@ -61,8 +72,11 @@
                                style:UIAlertActionStyleDefault
                                handler:^(UIAlertAction *action)
                                {
-
-
+                                   Adventurer *newAdventurer = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([Adventurer class]) inManagedObjectContext:self.moc];
+                                   UITextField *textfield = alertcontroller.textFields.firstObject;
+                                   newAdventurer.name = textfield.text;
+                                   [newAdventurer.managedObjectContext save:nil];
+                                   [self loadAdventurers];
 
                                }];
 
@@ -99,6 +113,7 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"adventurerCell"];
     Adventurer *a = self.adventurers[indexPath.row];
+    cell.textLabel.text = a.name;
 
     return cell;
 }

@@ -12,5 +12,6 @@
 @implementation Adventurer
 
 @dynamic raids;
+@dynamic name;
 
 @end
